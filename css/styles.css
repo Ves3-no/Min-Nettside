@@ -14,7 +14,6 @@ html, body{
 /* Ulike universale styles */
 h1, p, button, h2, h3, h4, img{
     margin-top: 0;
-    cursor: none;
 }
 h1, h2, h3{
     font-family: var(--font-main);
@@ -280,6 +279,7 @@ section{
 }
 .project > img{
     width: 40%;
+    margin-bottom: 2rem;
 
 }
 .project > button{
