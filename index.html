@@ -13,7 +13,10 @@
     <title>Min Nettside | Hjem</title>
     <!-- Linker css filen min med siden -->
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Peker scripten til javascript filen min og defer gjør at den kjøres etter html elementene har lastet inn -->
     <script src="./js/app.js" defer></script>
+
+    <link rel="shortcut icon" href="/assets/logo.ico" type="image/x-icon">
 </head>
 <!-- Body med alt innhold vi kan se -->
 <body>
@@ -23,8 +26,8 @@
         </div>
         <div class="nav_links">
             <a href="./index.html" class="nav_link">Hjem</a>
-            <a href="./index.html#section1" class="nav_link">Om Meg</a>
-            <a href="./index.html#section3" class="nav_link">Interesser</a>
+            <a href="./ommeg.html" class="nav_link">Om Meg</a>
+            <a href="./interesser.html" class="nav_link">Interesser</a>
             <a href="./kontakt.html" class="nav_link">Kontakt</a>
         </div>
     </nav>
@@ -33,8 +36,8 @@
             <h1>Heine Barane Vestre</h1>
             <p>- IM, VG1 Haugaland VGS</p>
             <div class="header_button_holder" >
-                <button class="primary" onclick="Openpage('https://ves3.no/')">Min side</button>
-                <button class="secondary black" onclick="Openpage('#section1')">Om meg</button>
+                <button class="primary" onclick="openPage('https://ves3.no/')">Min side</button>
+                <button class="secondary black" onclick="openPage('/ommeg.html')">Om meg</button>
             </div>
         </div>
     </div>
@@ -46,8 +49,8 @@
                     <h2>Kort Om Meg</h2>
                     <p>Jeg er en elev ved IM og skal spisse meg inn på IT-utviklerfaget. Jeg liker programmering, grafisk design og å trene. Jeg liker å lære nye ting, jeg jobber ofte godt selv og jeg pleier å ta ansvar. Jeg har en stor interesse innen teknologi generelt og jeg har både en 3D-Printer og drone.</p>
                     <div class="button_holder">
-                        <button>Github</button>
-                        <button class="secondary white">Interesser</button>
+                        <button onclick="openPage('https://github.com/Ves3-no')">Github</button>
+                        <button class="secondary white" onclick="openPage('/interesser.html')">Interesser</button>
                     </div>
                 </div>
             </div>
@@ -56,40 +59,26 @@
             <h2>Prosjekter</h2>
             <div id="projects_holder">
                 <div class="project">
-                    <button>Se Prosjektet</button>
+                    <img src="/images/react-128px.png" alt="">
+                    <h4>Lærlingkontoret</h4>
+                    <p>I sommeren/høsten 2026 laget jeg nettsiden til Lærlingkontoret</p>
+                    <button onclick="openPage('https://xn--lrlingkontoret-0ib.no/')" class="primary">Se Prosjektet</button>
                 </div>
                 <div class="project">
-                    <button>Se Prosjektet</button>
+                    <img src="/images/supabase-icon-green-transparent.png" alt="">
+                    <h4>HosLisa</h4>
+                    <p>I høsten 2026 laget jeg en nettbutikk til stesøsteren min. den er enda ikke helt ferdig</p>
+                    <button onclick="openPage('https://github.com/Ves3-no/hos-lisa')" class="primary">Se Prosjektet</button>
                 </div>
                 <div class="project">
-                    <button>Se Prosjektet</button>
+                    <img src="/images/file_type_powershell_icon_130243.png" alt="">
+                    <h4>Powershell</h4>
+                    <p>Høsten 2026 har jeg prøvd å lære meg powershell i dybdelæring på skolen</p>
+                    <button onclick="openPage('https://github.com/Ves3-no/Powershell-Dybde')" class="primary">Se Prosjektet</button>
                 </div>
             </div>
         </section>
-        <section id="section3">
-            <h2>Mine Interesser</h2>
-            <div id="interests_holder">
-                <div class="interest" id="interest1">
-                    <img src="./images/InteresseKoding.jpg" alt="">
-                    <div>
-                        <h3>Utvikling</h3>
-                        <p>Jeg har siden 2023 hatt stor interesse for utvikling. Jeg begynte smått med html, css og javascript og har etter vært hoppet inn i språksom python, c# og powershell. Jeg har jobbet mye med web design og har brukt mye tid med et rammeverk kalt React js og noe som heter tailwind css.</p>
-                    </div>
-                </div>
-                <div class="interest" id="interest2">
-                    <img src="./images/InteresseFotball.jpg" alt="">
-                    <div>
-                        <h3>Fotball</h3>
-                        <p>Fotball har vært en stor interesse for meg hele livet mitt. Jeg har vokst opp som manchester united suporter og i ungdomsårene har jeg blitt mer og mer interesert. Jeg har også spilt fotball siden jeg var 5 år og holder fortsatt på. Mye av fritiden min går til gaming og de siste årene er det fifa som har stått øverst på lista.</p>
-                    </div>
-                </div>
-                <div class="interest" id="interest3">
-                    <img src="./images/" alt="">
-                    <h3>3D Printing</h3>
-                    <p>For noen år siden kjøpte jeg en 3d printer. Jeg har brukt mye tid med den og den har lært meg mye om teknologi. Jeg har satte opp en raspberry pi for å styre den og lagt til andre ting på printeren.</p>
-                </div>
-            </div>
-        </section>
+        
     </div>
 </body>
 </html>

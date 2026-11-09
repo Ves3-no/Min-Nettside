@@ -1,3 +1,3 @@
-function Openpage(page){
+function openPage(page){
     window.location.href = page
 }
