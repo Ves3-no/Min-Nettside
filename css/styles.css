@@ -12,8 +12,9 @@ html, body{
 }
 
 /* Ulike universale styles */
-h1, p, button, h2{
+h1, p, button, h2, h3, h4, img{
     margin-top: 0;
+    cursor: none;
 }
 h1, h2, h3{
     font-family: var(--font-main);
@@ -254,6 +255,9 @@ section{
 #section2{
     text-align: center;
 }
+#section2 > h2{
+    margin-bottom: 3rem;
+}
 #projects_holder{
     display: flex;
     justify-content: center;
@@ -444,5 +448,34 @@ section{
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+.pointer{
+    mix-blend-mode: difference;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 2.3rem;
+    transform: translate(-50%, -50%);
+    cursor: none;
+    height: 2.3rem;
+    z-index: 4;
+    display: hidden;
+}
+.animate{
+    animation: 300ms click ease-in-out ;
+}
+@keyframes click{
+    0%{
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50%{
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(1);
     }
 }
