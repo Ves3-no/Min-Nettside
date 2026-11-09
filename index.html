@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!-- Engelsk språk -->
+<html lang="en">
+
+<!-- Head med links, tittel og metadata -->
+<head>
+    <!-- Karakter forståelse -->
+    <meta charset="UTF-8">
+    <!-- Gjør siden responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tittel på siden -->
+    <title>Min Nettside | Hjem</title>
+    <!-- Linker css filen min med siden -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/app.js" defer></script>
+</head>
+<!-- Body med alt innhold vi kan se -->
+<body>
+    <nav>
+        <div class="logo">
+            <p class="logo_inner">Heine Barane Vestre</p>
+        </div>
+        <div class="nav_links">
+            <a href="./index.html" class="nav_link">Hjem</a>
+            <a href="./index.html#section1" class="nav_link">Om Meg</a>
+            <a href="./index.html#section3" class="nav_link">Interesser</a>
+            <a href="./kontakt.html" class="nav_link">Kontakt</a>
+        </div>
+    </nav>
+    <div class="header">
+        <div class="header_container">
+            <h1>Heine Barane Vestre</h1>
+            <p>- IM, VG1 Haugaland VGS</p>
+            <div class="header_button_holder" >
+                <button class="primary" onclick="Openpage('https://ves3.no/')">Min side</button>
+                <button class="secondary black" onclick="Openpage('#section1')">Om meg</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <section id="section1" >
+            <div class="section1_holder">
+                <img src="./images/IMG_9644.jpg" class="image_of_me" alt="Bilde av meg">
+                <div class="section1_text_container">
+                    <h2>Kort Om Meg</h2>
+                    <p>Jeg er en elev ved IM og skal spisse meg inn på IT-utviklerfaget. Jeg liker programmering, grafisk design og å trene. Jeg liker å lære nye ting, jeg jobber ofte godt selv og jeg pleier å ta ansvar. Jeg har en stor interesse innen teknologi generelt og jeg har både en 3D-Printer og drone.</p>
+                    <div class="button_holder">
+                        <button>Github</button>
+                        <button class="secondary white">Interesser</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+            <h2>Prosjekter</h2>
+            <div id="projects_holder">
+                <div class="project">
+                    <button>Se Prosjektet</button>
+                </div>
+                <div class="project">
+                    <button>Se Prosjektet</button>
+                </div>
+                <div class="project">
+                    <button>Se Prosjektet</button>
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <h2>Mine Interesser</h2>
+            <div id="interests_holder">
+                <div class="interest" id="interest1">
+                    <img src="./images/InteresseKoding.jpg" alt="">
+                    <div>
+                        <h3>Utvikling</h3>
+                        <p>Jeg har siden 2023 hatt stor interesse for utvikling. Jeg begynte smått med html, css og javascript og har etter vært hoppet inn i språksom python, c# og powershell. Jeg har jobbet mye med web design og har brukt mye tid med et rammeverk kalt React js og noe som heter tailwind css.</p>
+                    </div>
+                </div>
+                <div class="interest" id="interest2">
+                    <img src="./images/InteresseFotball.jpg" alt="">
+                    <div>
+                        <h3>Fotball</h3>
+                        <p>Fotball har vært en stor interesse for meg hele livet mitt. Jeg har vokst opp som manchester united suporter og i ungdomsårene har jeg blitt mer og mer interesert. Jeg har også spilt fotball siden jeg var 5 år og holder fortsatt på. Mye av fritiden min går til gaming og de siste årene er det fifa som har stått øverst på lista.</p>
+                    </div>
+                </div>
+                <div class="interest" id="interest3">
+                    <img src="./images/" alt="">
+                    <h3>3D Printing</h3>
+                    <p>For noen år siden kjøpte jeg en 3d printer. Jeg har brukt mye tid med den og den har lært meg mye om teknologi. Jeg har satte opp en raspberry pi for å styre den og lagt til andre ting på printeren.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

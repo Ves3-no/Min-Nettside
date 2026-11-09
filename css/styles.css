@@ -1,0 +1,297 @@
+html, body{
+    background-color: antiquewhite;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --font-main: "Segoe UI", Arial, Helvetica, system-ui, sans-serif; 
+    --font-secondary: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Ulike universale styles */
+
+h1, p, button, h2{
+    margin-top: 0;
+}
+h1, h2, h3{
+    font-family: var(--font-main);
+}
+p, button{
+    font-family: var(--font-secondary);
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    transition: all 150ms ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+    width: 6rem;
+    font: var(--font-main);
+}
+button:hover{
+    transform: scale(1.075);
+}
+button:active{
+    transform: scale(0.925);
+}
+button.primary{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+button.white{
+    border-color: white;
+    color: white;
+}
+button.black{
+    border-color: black;
+    color: black;
+}
+button.primary > a{
+    color: white;
+}
+button.secondary{
+    background-color: transparent;
+}
+button.secondary > a{
+    color: black;
+}
+.button_holder{
+    display: flex;
+    gap: 0.75rem;
+}
+
+/* Header */
+
+.header{
+    background-image: url(../images//coding.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 44vh;
+    margin-top: 0;
+    padding: 10rem 6rem;
+}
+.header_container{
+    width: 20rem;
+    border-radius: 2px;
+    padding: 2rem;
+    background-color: bisque;
+}
+.header_button_holder{
+    display: flex;
+    gap: 0.75rem;
+}
+
+/* navigasjon på siden */
+
+nav{
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8rem;
+    border-bottom: 1px solid;
+    width: 52%;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    background-color: bisque;
+    border-radius: 2rem;
+    align-items: center;
+    box-shadow: 4px 2px 10px black;
+
+}
+.nav_links{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.nav_link{
+    color: black;
+    text-decoration: none;
+}
+.nav_link:hover{
+    text-decoration: underline;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_inner{
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+/* seksjoner */
+
+section{
+    height: auto;
+    width: auto;
+    border-bottom: solid 1px;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+/* seksjon 1 */
+
+#section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.section1_holder{
+    flex-direction: row;
+    display: flex;
+    width: 70%;
+}
+.section1_text_container{
+    height: 18rem;
+    background-color: rgb(26, 24, 24);
+    border-radius: 0 2rem 2rem 0;
+    color: white;
+    padding: 2rem;
+}
+.section1_text_container > h2{
+    font-weight: bolder;
+}
+.section1_text_container > p{
+    text-wrap: wrap;
+    max-width: 100%;
+}
+
+.image_of_me{
+    border-radius: 50% 0 0 50%;
+    width: 20rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+
+/* Kontakt */
+
+.contact_main_holder{
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    height: auto;
+    width: 60%;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    justify-content: space-around;
+}
+.text_container > p > a{
+    text-decoration: underline;
+    color: rgb(25, 116, 116);
+}
+.contact_image{
+    width: 30%;
+    border-radius: 0.25rem;
+}
+
+/* Interesser */
+#section3{
+ text-align: center;
+}
+#section3 > h2{
+    margin-bottom: 4rem;
+}
+#interests_holder{
+    width: 60%;
+    max-width: 1000px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    align-items: stretch;
+    gap: 2rem;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+.interest{
+    overflow: hidden;
+    display: flex;
+    border: solid 1px black;
+    padding: 2rem;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+#interest1{
+    grid-column: 2;
+    grid-row: 1;
+}
+#interest2{
+    grid-column: 1;
+    grid-row: span 2;
+}
+#interest3{
+    grid-column: 2;
+    grid-row: 2;
+}
+.interest > img{
+    border-radius: 0.2rem;
+}
+
+/* Prosjekter */
+
+
+
+/* scrollbar */
+::-webkit-scrollbar{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgb(25, 116, 116);
+    border-radius: 2rem;
+}
+
+/* responsivt design */
+@media (min-width: 600px) {
+    html{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1400px) {
+    #interests_holder{
+        width: 85%;
+    }
+    section{
+        padding: 1rem;
+    }
+}
+@media (max-width: 800px) {
+    #interests_holder{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        padding: 0;
+    }
+    .header{
+        padding: 0;
+        padding-top: 10rem;
+        height: 60vh;
+    }
+    .header_container{
+        margin: 0 auto;
+    }
+    .logo{
+        display: none;
+    }
+    .nav_links{
+        width: 100%;
+    }
+}
