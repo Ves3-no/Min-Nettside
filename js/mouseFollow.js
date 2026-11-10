@@ -1,4 +1,6 @@
 const pointer = document.querySelector("#follow")
+const nav = document.querySelector("nav")
+const footer = document.querySelector("footer")
 
 window.addEventListener("mousemove", (e)=>{
     changePosition(e)
@@ -6,7 +8,6 @@ window.addEventListener("mousemove", (e)=>{
 window.addEventListener("mousedown", (e)=>{
     
     pointer.classList.add("animate")
-    console.log("started")
     setTimeout(remove, 301)
 
 })
@@ -19,5 +20,16 @@ function changePosition(e){
 
     pointer.style.left = `${xPosition}px`
     pointer.style.top = `${yPosition}px`
-    pointer.style.display = "block"
 }
+nav.addEventListener("mouseenter", ()=> {
+    pointer.style.display = "block"
+})
+nav.addEventListener("mouseleave", ()=> {
+    pointer.style.display = "None"
+})
+footer.addEventListener("mouseenter", ()=> {
+    pointer.style.display = "block"
+})
+footer.addEventListener("mouseleave", ()=> {
+    pointer.style.display = "None"
+})
