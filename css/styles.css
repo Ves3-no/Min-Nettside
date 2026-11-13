@@ -463,9 +463,17 @@ footer h3{
     #interests_holder{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     section{
-        padding: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100%;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    .interest{
+        width: 76%;
     }
     .header{
         padding: 0;
@@ -512,7 +520,8 @@ footer h3{
         flex-direction: column;
         margin-bottom: 2rem;
         align-items: stretch;
-        width: 80%;
+        width: 96% !important;
+        overflow: hidden;
     }
     .section1_text_container{
         border-radius: 0 0 2rem 2rem;
@@ -526,6 +535,9 @@ footer h3{
     }
     footer{
         padding: 2rem 3%;
+    }
+    .contact_main_holder{
+        width: 74%;
     }
     .AboutSections{
         flex-direction: column;
@@ -546,6 +558,10 @@ footer h3{
         width: 100%;
         margin: 0;
     }
+    #interests_holder{
+        width: 100%;
+    }
+    
 }
 /* animations */
 

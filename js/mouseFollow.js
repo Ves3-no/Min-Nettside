@@ -19,9 +19,9 @@ function changePosition(e){
     const yPosition = e.clientY
 
     pointer.animate([
-        {left: `${pointer.xPosition}px`, top: `${pointer.yPosition}px`},
+        {left: `${pointer.style.left}`, top: `${pointer.style.top}`},
         {left: `${xPosition}px`, top: `${yPosition}px`}
-    ], {duration: 500, iterations: 1, fill: "forwards"})
+    ], {duration: 600, iterations: 1, fill: "forwards"})
 }
 nav.addEventListener("mouseenter", ()=> {
     pointer.style.display = "block"
