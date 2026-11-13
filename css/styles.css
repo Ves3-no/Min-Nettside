@@ -15,7 +15,7 @@ html, body{
 h1, p, button, h2, h3, h4, img, h5{
     margin: 0;
 }
-h1, h2, h3{
+h1, h2, h3, h4, h5{
     font-family: var(--font-main);
 }
 p, button{
