@@ -573,6 +573,8 @@ footer h3{
     height: 2.3rem;
     z-index: 22;
     display: none;
+    transition: filter  400ms ease, background-color 200ms ease;
+
 }
 .pointer.glow{
     background-image: radial-gradient(circle, #fff, rgb(25, 116, 116));
